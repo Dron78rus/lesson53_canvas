@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      p {
+        font-weight: bold;
+      }
+      .topic {
+        text-decoration: underline;
+        margin: 10px;
+      }
+      .task {
+        margin: 20px 10px;
+      }
+      .canvasT1 {
+        border: 1px inset rgb(248, 192, 182);
+      }
+    </style>
+
+    <p>Задание 1</p>
+
+    <div class="topic">На линии</div>
+    <div class="task">
+      Нарисуйте на канвасе такую же фигуру, как показано в образце
+    </div>
+
+    <canvas height="80" width="300" class="canvasT1"></canvas>
+
+    <p>Задание 2</p>
+
+    <canvas height="80" width="300" class="canvasT2"></canvas>
+
+    <p>Задание 3</p>
+
+    <canvas height="200" width="200" class="canvasT3"></canvas>
+
+    <p>Задание 4</p>
+
+    <canvas height="200" width="200" class="canvasT4"></canvas>
+
+    <p>Задание 5</p>
+
+    <canvas height="200" width="200" class="canvasT5"></canvas>
+
+    <p>Задание 6</p>
+
+    <canvas height="200" width="200" class="canvasT6"></canvas>
+
+    <p>Задание 7</p>
+    <div class="task">
+      Используя методы moveTo и lineTo для рисования контура и метод fill для
+      его заливки, нарисуйте на канвасе следующую фигуру:
+    </div>
+
+    <canvas height="200" width="200" class="canvasT7"></canvas>
+
+    <p>Задание 8</p>
+
+    <canvas height="200" width="200" class="canvasT8"></canvas>
+
+    <p>Задание 9</p>
+
+    <div class="topic">На фигуры</div>
+    <div class="task">
+      Используя метод fillRect, нарисуйте на канвасе следующую фигуру
+    </div>
+
+    <canvas height="80" width="300" class="canvasT9"></canvas>
+
+    <p>Задание 10</p>
+    <div class="task">
+      Используя метод strokeRect, нарисуйте на канвасе следующую фигуру
+    </div>
+
+    <canvas height="200" width="400" class="canvasT10"></canvas>
+
+    <p>Задание 11</p>
+    <div class="task">
+      Используя методы fillRect и clearRect, нарисуйте на канвасе следующую
+      фигуру
+    </div>
+
+    <canvas height="200" width="400" class="canvasT11"></canvas>
+
+    <p>Задание 12</p>
+    <div class="task">
+      Используя метод rect, нарисуйте на канвасе следующую фигуру
+    </div>
+
+    <canvas height="200" width="400" class="canvasT12"></canvas>
+
+    <p>Задание 13</p>
+
+    <canvas height="200" width="400" class="canvasT13"></canvas>
+
+    <p>Задание 14</p>
+    <div class="topic">На окружности</div>
+    <div class="task">
+      Используя метод arc, нарисуйте на канвасе следующую фигуру
+    </div>
+
+    <canvas height="200" width="400" class="canvasT14"></canvas>
+
+    <p>Задание 15</p>
+
+    <canvas height="200" width="400" class="canvasT15"></canvas>
+
+    <p>Задание 16</p>
+
+    <canvas height="200" width="400" class="canvasT16"></canvas>
+
+    <p>Задание 17</p>
+
+    <canvas height="200" width="400" class="canvasT17"></canvas>
+
+    <p>Задание 18</p>
+
+    <canvas height="200" width="400" class="canvasT18"></canvas>
+
+    <p>Задание 19</p>
+
+    <canvas height="200" width="400" class="canvasT19"></canvas>
+
+    <p>Задание 20</p>
+    <div class="topic">На смену цвета</div>
+
+    <canvas height="200" width="400" class="canvasT20"></canvas>
+
+    <p>Задание 21</p>
+
+    <canvas height="200" width="400" class="canvasT21"></canvas>
+
+    <p>Задание 22</p>
+
+    <canvas height="200" width="400" class="canvasT22"></canvas>
+
+    <p>Задание 23</p>
+
+    <canvas height="200" width="400" class="canvasT23"></canvas>
+
+    <p>Задание 24</p>
+
+    <canvas height="200" width="400" class="canvasT24"></canvas>
+
+    <p>Задание 25</p>
+
+    <canvas height="200" width="400" class="canvasT25"></canvas>
+
+    <script>
+      // http://old.code.mu/tasks/javascript/canvas/osnovy-raboty-s-canvas-v-javascript.html
+
+      // задание 1
+
+      const d = document
+      const canvasT1 = d.querySelector('.canvasT1')
+      const contextT1 = canvasT1.getContext('2d')
+
+      contextT1.moveTo(50, 50)
+      contextT1.lineTo(200, 50)
+      contextT1.stroke()
+
+      // задание 2
+
+      const canvasT2 = d.querySelector('.canvasT2')
+      const contextT2 = canvasT2.getContext('2d')
+
+      contextT2.moveTo(50, 10)
+      contextT2.lineTo(50, 80)
+      contextT2.stroke()
+
+      // задание 3
+
+      const canvasT3 = d.querySelector('.canvasT3')
+      const contextT3 = canvasT3.getContext('2d')
+
+      contextT3.moveTo(50, 50)
+      contextT3.lineTo(130, 130)
+      contextT3.stroke()
+
+      contextT3.moveTo(130, 50)
+      contextT3.lineTo(50, 130)
+      contextT3.stroke()
+
+      // задание 4
+
+      const canvasT4 = d.querySelector('.canvasT4')
+      const contextT4 = canvasT4.getContext('2d')
+
+      contextT4.moveTo(50, 50)
+      contextT4.lineTo(130, 50)
+      contextT4.lineTo(130, 130)
+      contextT4.lineTo(50, 130)
+      contextT4.lineTo(50, 50)
+      contextT4.stroke()
+
+      // задание 5
+
+      const canvasT5 = d.querySelector('.canvasT5')
+      const contextT5 = canvasT5.getContext('2d')
+
+      contextT5.moveTo(50, 50)
+      contextT5.lineTo(130, 50)
+      contextT5.lineTo(90, 100)
+      contextT5.closePath()
+
+      contextT5.stroke()
+
+      // задание 6
+
+      const canvasT6 = d.querySelector('.canvasT6')
+      const contextT6 = canvasT6.getContext('2d')
+
+      contextT6.moveTo(50, 50)
+      contextT6.lineTo(130, 50)
+      contextT6.stroke()
+
+      contextT6.moveTo(100, 40)
+      contextT6.lineTo(130, 50)
+      contextT6.lineTo(100, 60)
+      contextT6.stroke()
+
+      // задание 7
+
+      const canvasT7 = d.querySelector('.canvasT7')
+      const contextT7 = canvasT7.getContext('2d')
+
+      contextT7.moveTo(50, 50)
+      contextT7.lineTo(150, 50)
+      contextT7.lineTo(150, 100)
+      contextT7.lineTo(50, 100)
+      contextT7.closePath()
+      contextT7.fill()
+
+      // задание 8
+
+      const canvasT8 = d.querySelector('.canvasT8')
+      const contextT8 = canvasT8.getContext('2d')
+
+      contextT8.moveTo(50, 50)
+      contextT8.lineTo(80, 100)
+      contextT8.lineTo(20, 100)
+      contextT8.closePath()
+      contextT8.fill()
+
+      // задание 9
+
+      const canvasT9 = d.querySelector('.canvasT9')
+      const contextT9 = canvasT9.getContext('2d')
+
+      contextT9.fillRect(50, 50, 350, 100)
+
+      // задание 10
+
+      const canvasT10 = d.querySelector('.canvasT10')
+      const contextT10 = canvasT10.getContext('2d')
+
+      contextT10.strokeRect(49, 30, 350, 100)
+
+      // задание 11
+
+      const canvasT11 = d.querySelector('.canvasT11')
+      const contextT11 = canvasT11.getContext('2d')
+
+      contextT11.fillRect(30, 30, 250, 200)
+      contextT11.clearRect(60, 40, 100, 70)
+
+      // задание 12
+
+      const canvasT12 = d.querySelector('.canvasT12')
+      const contextT12 = canvasT12.getContext('2d')
+
+      contextT12.rect(50, 20, 100, 75)
+      contextT12.stroke()
+
+      // задание 13
+
+      const canvasT13 = d.querySelector('.canvasT13')
+      const contextT13 = canvasT13.getContext('2d')
+
+      contextT13.rect(50, 20, 100, 75)
+      contextT13.fill()
+
+      // задание 14
+
+      const canvasT14 = d.querySelector('.canvasT14')
+      const contextT14 = canvasT14.getContext('2d')
+
+      function getRadians(degrees) {
+        return (Math.PI / 180) * degrees
+      }
+
+      contextT14.arc(75, 75, 50, 0, getRadians(360))
+      contextT14.stroke()
+
+      // задание 15
+
+      const canvasT15 = d.querySelector('.canvasT15')
+      const contextT15 = canvasT15.getContext('2d')
+
+      contextT15.arc(75, 75, 50, 0, getRadians(360))
+      contextT15.fill()
+
+      // задание 16
+
+      const canvasT16 = d.querySelector('.canvasT16')
+      const contextT16 = canvasT16.getContext('2d')
+
+      contextT16.arc(75, 75, 50, 0, getRadians(180))
+      contextT16.stroke()
+
+      // задание 17
+
+      const canvasT17 = d.querySelector('.canvasT17')
+      const contextT17 = canvasT17.getContext('2d')
+
+      contextT17.arc(75, 75, 50, 0, getRadians(180))
+      contextT17.closePath()
+      contextT17.stroke()
+
+      // задание 18
+
+      const canvasT18 = d.querySelector('.canvasT18')
+      const contextT18 = canvasT18.getContext('2d')
+
+      contextT18.arc(75, 75, 50, 0, getRadians(180))
+      contextT18.fill()
+
+      // задание 19
+
+      const canvasT19 = d.querySelector('.canvasT19')
+      const contextT19 = canvasT19.getContext('2d')
+
+      contextT19.arc(75, 75, 50, getRadians(90), getRadians(180))
+      contextT19.fill()
+
+      // задание 20
+
+      const canvasT20 = d.querySelector('.canvasT20')
+      const contextT20 = canvasT20.getContext('2d')
+
+      contextT20.moveTo(50, 50)
+      contextT20.lineTo(200, 50)
+      contextT20.strokeStyle = 'red'
+      contextT20.stroke()
+
+      // задание 21
+
+      const canvasT21 = d.querySelector('.canvasT21')
+      const contextT21 = canvasT21.getContext('2d')
+
+      contextT21.moveTo(50, 50)
+      contextT21.lineTo(200, 50)
+      contextT21.strokeStyle = 'red'
+
+      contextT21.stroke()
+
+      contextT21.beginPath()
+      contextT21.moveTo(50, 60)
+      contextT21.lineTo(200, 60)
+      contextT21.strokeStyle = 'green'
+
+      contextT21.stroke()
+
+      // задание 22
+
+      const canvasT22 = d.querySelector('.canvasT22')
+      const contextT22 = canvasT22.getContext('2d')
+
+      contextT22.fillStyle = 'green'
+      contextT22.fillRect(50, 30, 200, 100)
+
+      // задание 23
+
+      const canvasT23 = d.querySelector('.canvasT23')
+      const contextT23 = canvasT23.getContext('2d')
+
+      contextT23.fillStyle = 'red'
+      contextT23.fillRect(50, 20, 75, 75)
+
+      contextT23.beginPath()
+      contextT23.fillStyle = 'green'
+      contextT23.fillRect(50, 115, 75, 75)
+
+      // задание 24
+
+      const canvasT24 = d.querySelector('.canvasT24')
+      const contextT24 = canvasT24.getContext('2d')
+
+      for (let i = 0; i < 8; i++) {
+        contextT24.beginPath()
+        contextT24.moveTo(50, 50 + 10 * i)
+        contextT24.lineTo(150, 50 + 10 * i)
+        contextT24.stroke()
+      }
+
+      // задание 25
+
+      const canvasT25 = d.querySelector('.canvasT25')
+      const contextT25 = canvasT25.getContext('2d')
+
+      for (let i = 0; i < 11; i++) {
+        contextT25.beginPath()
+        contextT25.moveTo(50, 50 + 10 * i)
+        contextT25.lineTo(170, 50 + 10 * i)
+        contextT25.stroke()
+      }
+
+      for (let i = 0; i < 11; i++) {
+        contextT25.beginPath()
+        contextT25.moveTo(60 + 10 * i, 40)
+        contextT25.lineTo(60 + 10 * i, 160)
+        contextT25.stroke()
+      }
+    </script>
+  </body>
+</html>
